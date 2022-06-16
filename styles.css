@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ## Colors */
+    /* ### Primary */
+    --blue: hsl(223, 87%, 63%);
+
+    /* ### Secondary */
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+
+    /* Neutral */
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+.attribution { font-size: 11px; text-align: center; color: var(--gray);}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-top: 3.5rem;
+}
+
+header {
+    color: var(--gray);
+    font-weight: 300;
+    font-size: 2.2rem;
+    margin-top: 2.5rem;
+}
+
+header span {
+    color: black;
+    font-weight: 700;
+}
+
+article {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+input {
+    width: 29rem;
+    height: 2.7rem;
+    border: 1px solid var(--gray);
+    border-radius: 25px;
+    padding-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+.invalid {
+    border:2px solid var(--light-red);
+}
+
+.validity {
+    color: var(--light-red);
+    font-size: 0.8rem;
+    padding: 0.5rem 0 0 1.5rem;
+    font-style: italic;
+
+}
+
+button {
+    width: 10rem;
+    height: 2.7rem;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--blue);
+    color: white;
+    margin-left: 0.5rem;
+    box-shadow: 1px 1px 7px 1px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--pale-blue);
+}
+
+.illustration {
+    margin: 4.5rem 0 2.5rem;
+    width: 45%;
+}
+
+.social {
+    display: flex;
+}
+
+.social i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+    margin: 2rem 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 20px;
+    color: var(--blue);
+    padding: 1.1rem;
+}
+
+.social i:hover {
+    color: white;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+
+    header {
+        display: flex;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    header span {
+        padding-left: 0.3rem;
+    }
+
+    article {
+        font-size: 0.9rem;
+    }
+
+    .email-input {
+        margin: 0 auto;
+    }
+
+    input {
+        width: 80%;
+        margin: 2rem 2rem 0.7rem;
+    }
+
+    button {
+        width: 80%;
+        margin: 0 2rem;
+    }
+
+    .validity {
+        margin: 0 3.5rem;
+        
+    }
+
+    .illustration {
+        width: 90%;
+    }
+}
