@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/ping-coming-soon-page-made-using-flexbox-gGm2FCUfsj)
+- Live Site URL: [Add live site URL here](https://frontendmentor-pingcomingsoonpage-two.vercel.app/)
 
 ## My process
 
